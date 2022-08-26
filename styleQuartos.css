@@ -1,0 +1,164 @@
+* {
+    background-color: rgb(19,19,19);
+    margin: 0;
+    padding: 0;
+    color: azure;
+}
+.topNav{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid azure;
+}
+.nomeEmpresa {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: snow;
+}
+.btns{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.searchBar {
+    width: 75%;
+    height: 24px;
+    transform: translateY(-5px);
+    margin-left: 4px;
+    border-radius: 7px;
+    font-weight: 500;
+}
+.mainBody {
+    height: 76vh;
+    width: 100%;
+    display: flex;
+}
+.navLeft {
+    width: 20vw;
+    height: 100%;
+    border-right: 2px solid azure;
+}
+.listaNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.listaNav > li {
+    cursor: pointer;
+    margin: 10px 0 10px 0;
+}
+
+.listaNav > li:hover {
+    transform: scale(1.2);
+}
+.menuRight {
+    margin-left:6px;
+    width: 80vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.menuRight > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 80%;
+    border: 1px solid azure;
+    border-radius: 7px;
+    margin: 30px;
+    cursor: pointer;
+    box-shadow: inset -3px -3px 7px azure;
+}
+.menuRight > div:hover {
+    font-size: 22px;
+    box-shadow: inset -5px -5px 7px azure;
+}
+#tableH {
+    list-style: none;
+    position: absolute;
+    width: 79.3%;
+    height: 75.8%;
+}
+td {
+    border: 1px solid azure;
+    margin: 0 auto;
+    display: table-cell;
+    padding: 5px;
+}
+td:hover {
+    background-color: azure;
+    color: black;    
+}
+#tableReserva {
+    position: absolute;
+    width: 79.3%;
+    height: 75.8%;
+}
+.footer {
+    width: 100%;
+    display: flex;
+}
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+h2 {
+    margin: 15px 0 0 10px;
+    transform: translateY(3px);
+    font-size: 14px;
+}
+h2 > span {
+    transform: translateY(3px);
+}
+p {
+    align-self: flex-end;
+}
+form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    width: 20%;
+}
+form > input {
+    padding: 10px;
+    margin: 20px ;
+    border-radius: 7px;
+}
+#formularioHospede > legend {
+    justify-self: center;
+}
+#btnSalvarHospede, #btnSalvarReserva {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    border: 1px solid azure;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btnSalvarHospede:hover, #btnSalvarReserva:hover {
+    transition: 1.2s;
+    background-color: azure;
+    color: rgb(19,19,19);
+}
+#iddaReserva {
+    cursor: not-allowed;
+}
+

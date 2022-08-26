@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styleQuartos.css">
+    <script  src="indexScript.js" type="module"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="topNav">
+        <h1 class="nomeEmpresa">Hotelaria LEG</h1>
+        <nav class="btns">
+            <div>Menu</div>
+            <div>Informações sobre o software</div>
+            <div class="search">
+                <span class="openSearch material-symbols-outlined">search</span>
+                <input class="searchBar" placeholder="Pesquisar" type="text">
+            </div>
+        </nav>
+    </header>
+    
+    <div class="mainBody">
+        <div class="navLeft" >
+            <ul class="listaNav">
+                <li id="btnQuarto" >Quartos</li>
+                <li id="btnHospedes">Hospedes</li>
+                <li id="btnReserva">Reservas</li>
+                <li id="btnCadastroHospede">Cadastrar Hospede</li>
+                <li id="btnCadastroReserva">Criar Reserva</li>
+            </ul>
+        </div>
+        <div  class="menuRight">
+            <div class="hidden" id="quartoS" style="background-color: rgb(175, 75, 255);">Quartos de solteiro</div>
+            <div class="hidden" id="quartoC" style="background-color: rgb(49, 7, 128);">Quartos de casal</div>
+            <div class="hidden" id="quartoF" style="background-color: rgb(0, 34, 121);">Quartos de família</div>
+            <table class="hidden" id ="tableH">
+                <tr>
+                    <th>Nome</th>
+                    <th>Cpf</th>
+                    <th>Quarto Reservado</th>
+                    <th>ID da reserva</th>
+                </tr>
+            </table>
+            <table class="hidden" id="tableReserva">
+                <tr>
+                    <th>ID</th>
+                    <th>Hospede</th>
+                    <th>Quarto</th>
+                    <th>Estadia</th>
+                </tr>
+            </table>
+            <form class="hidden" id="formularioHospede">
+                <legend>Nome do Hospede</legend>
+                <input name="nome" type="text" id="nomeHospede">
+                <legend>CPF do Hospede</legend>
+                <input type="number" name="cf" id="cpfHospede">
+                <legend>Quarto Reservado</legend>
+                <input type="number" id="quartoHospede">
+                <legend>ID da Reserva</legend>
+                <input type="number" id="idReserva">
+                <div id="btnSalvarHospede">Salvar</div>
+            </form>
+            <form class="hidden" id="formularioReserva">
+                <legend>ID</legend>
+                <input type="number" disabled id="iddaReserva">
+                <legend>Hospede</legend>
+                <input type="text" id="nomeHospedeReserva">
+                <legend>Quarto</legend>
+                <input type="text" id="quartoReserva">
+                <legend>Estadia</legend>
+                <input type="number" id="estadiaReserva">
+                <div id="btnSalvarReserva">Salvar</div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <h2>
+            <span class="material-symbols-outlined">
+                person
+                </span>
+                Problemas? contate um superior clicando <a href="#">aqui</a>
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ratione sunt nihil nam officiis mollitia possimus velit deserunt porro? Ad culpa incidunt nemo rem veniam quo fugiat error a minus.
+        </p>
+    </footer>
+</body>
+</html>
