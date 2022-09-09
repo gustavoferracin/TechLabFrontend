@@ -1,0 +1,17 @@
+{
+    "users": [
+        {
+          "user" : "Edmilson Gonzaga",
+          "pws"  : "12345"
+        },
+        
+        {
+          "user" : "Leônidas Jorge",
+          "pws"  : "12345"
+        },
+        {
+          "user" : "gus",
+          "pws" : "123"
+        }
+    ] 
+  }

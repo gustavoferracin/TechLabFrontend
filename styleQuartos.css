@@ -86,8 +86,17 @@
     font-size: 22px;
     box-shadow: inset -5px -5px 7px azure;
 }
+#tableQuartosS {
+    position: absolute;
+    width: 79.3%;
+    height: 75.8%;
+}
+#tableQuartosS > th {
+    height: fit-content;
+    width: auto;
+    
+}
 #tableH {
-    list-style: none;
     position: absolute;
     width: 79.3%;
     height: 75.8%;

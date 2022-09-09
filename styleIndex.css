@@ -1,0 +1,98 @@
+* {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+div#container{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(19,19,19);
+    background: linear-gradient(48deg, rgba(19,19,19,1) 60%, rgba(240,255,255,1) 100%);
+    animation-fill-mode: backwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    border: 1px solid azure;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20vw;
+    height: 50vh;
+}
+input {
+    width: 80%;
+    border-radius: 10px;
+    height: 25px;
+}
+legend {
+    margin-top: 20px;
+    color: azure;
+    transform: translateX(-40px);
+    padding: 0 10px 10px 10px;
+}
+#legendSenha {
+    transform: translateX(-90px);
+}
+form div {
+    color: azure;
+    width: 80%;
+    height: 20%;
+    display: flex;
+    margin-top: 55px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid azure;
+    cursor: pointer;
+    border-radius: 15px;
+}
+@keyframes entradaTop {
+    from{opacity: 0; visiblity: hidden; transform: translateY(-60px);
+    } to {
+        opacity: 1; visibility: visible; transform: translateY(0);
+    }
+}
+#textLeft {
+    color: azure;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    left: 2.5%;
+    top: 40%;
+    animation: entradaTop 2s .5s;
+    animation-fill-mode: backwards;
+}
+@keyframes entradaBot {
+    from{opacity: 0; visiblity: hidden; transform: translateY(60px);
+    } to {
+        opacity: 1; visibility: visible; transform: translateY(0);
+    }
+}
+#textLeftBottom {
+    color: azure;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    left: 6.5%;
+    bottom: 40%;
+    animation: entradaBot 2s 2.5s;
+    animation-fill-mode: backwards;
+}
+@keyframes entradaLogo {
+    from{opacity: 0; visibility: hidden; transform: translateX(600px);
+    } to {
+        opacity: 1; visibility: visible; transform: translateX(0);
+    }
+}
+h1 {
+    color: azure;
+    font-family: "Righteous", cursive;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    right: 7.5%;
+    animation: entradaLogo 1.2s 5.5s;
+    animation-fill-mode: backwards;
+}
